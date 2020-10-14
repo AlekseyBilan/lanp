@@ -1,0 +1,70 @@
+.draggable-area {
+    box-sizing: border-box;
+    width: 360px;
+    height: 470px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+
+    &.drag-hover {
+        background-color: #F5F9FF;
+        border: 1px dashed #4991E5;
+    }
+
+    &__logo-img-wrap{
+        background-color: #fff;
+        height: 100px;
+        width: 100px;
+        border: 1px solid #D1E3F8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 12px;
+        pointer-events: none;
+    }
+
+    &__logo-img{
+        height: 100px;
+        width: auto;
+    }
+
+    &__description{
+        pointer-events: none;
+    }
+
+    &__title{
+        font-size: 12px;
+        line-height: 2;
+        padding: 5px 0;
+        color: #324964;
+    }
+
+    &__subtitle{
+        color: #6B85A3;
+        display: block;
+    }
+
+    &__label{
+        color: #4991E5;
+        cursor: pointer;
+        pointer-events: auto;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:active {
+          color: darken(#4991E5, 20%);
+        }
+    }
+    
+    &__file-loader{
+        display: none;
+    }
+}
